@@ -1,0 +1,22 @@
+# Byte-compiled / cache
+__pycache__/
+.py[cod]
+
+# IDE settings
+.idea/
+.vscode/
+
+# Environments
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data
+.csv
+.xlsx
+.json
+.pkl
+
