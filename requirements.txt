@@ -5,3 +5,6 @@ numpy
 requests
 matplotlib
 seaborn
+kaggle
+kagglehub[pandas-datasets]
+
