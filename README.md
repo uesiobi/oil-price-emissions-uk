@@ -10,10 +10,10 @@ This project explores how crude oil prices influence fossil fuel consumption and
 
 ## Team Members - AlphaTeam
 #### Uzochukwu Esiobi (Data Engineer, Data cleaner )
-#### Obinna Okonkwo ()
-#### Sandra (Documenter )
-#### Nelson ()
-#### Tolu ()
+#### Obinna Okonkwo (Project Manager)
+#### Sandra Harry(Documenter )
+#### Nelson Kade (Documenter)
+#### Tolulope Ogunbiyi (Data Cleaner)
 
 ## How to Run
 ```bash
