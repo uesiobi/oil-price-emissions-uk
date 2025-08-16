@@ -10,3 +10,4 @@ kagglehub[pandas-datasets]
 
 
 SQLAlchemy~=2.0.42
+azure-storage-blob

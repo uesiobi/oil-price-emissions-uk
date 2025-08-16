@@ -1,16 +1,18 @@
 # Importing the Crude oil dataset from Kaggle using API
 
 import os
-import pandas as pd
-from kaggle.api.kaggle_api_extended import KaggleApi
 from pathlib import Path
+import pandas as pd
+from dotenv import load_dotenv
+from kaggle.api.kaggle_api_extended import KaggleApi
 
-# Setting up kaggle API DIR; use this when you don't have the JSON file in your directory
-# os.environ['KAGGLE_USERNAME']= 'brillianthub'
-# os.environ['KAGGLE_KEY']= "f697215f527f47d233a43d85d97799d2"
 
-# OR use this when you save the JSON file to a specific directory and link the path as I did
-os.environ['KAGGLE_CONFIG_DIR'] = r"C:/Users/uzo2e/Documents/DataKirk/python/DataKirk_Sprint4_Project/"
+load_dotenv()
+
+# Configuring Kaggle API
+KAGGLE_CONFIG_DIR = os.getenv("KAGGLE_CONFIG_DIR", "./config")
+print(KAGGLE_CONFIG_DIR)
+os.environ["KAGGLE_CONFIG_DIR"] = str(Path(KAGGLE_CONFIG_DIR).resolve())
 
 
 # Now to download crude oil price dataset from kaggle using API

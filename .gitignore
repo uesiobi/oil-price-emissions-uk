@@ -19,4 +19,4 @@ ENV/
 .xlsx
 .json
 .pkl
-
+.env
