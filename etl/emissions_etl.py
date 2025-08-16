@@ -28,7 +28,7 @@ def transform_emissions(file_path,output_path = "data/cleaned/uk_emissions_clean
         df.rename(columns={'emissions_(indexed_to_1990)': 'emissions'}, inplace=True)
 
     if 'year' in df.columns:
-        df = df[df['year'].between(2015, 2024)]
+        df = df[df['year'].between(1990, 2023)]
         df['year'] = pd.to_numeric(df['year'], errors='coerce')  # convert to number
 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)

@@ -32,7 +32,7 @@ def process_crude_data(input_path: str, output_path: str) -> pd.DataFrame:
     df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]
     df['date'] = pd.to_datetime(df['date'])
     df['year'] = df['date'].dt.year
-    df = df[df['year'].between(2015, 2024)]
+    df = df[df['year'].between(1990, 2024)]
 
     if 'price' in df.columns:
         df.rename(columns={'price': 'price_used_per_barrel'}, inplace=True)

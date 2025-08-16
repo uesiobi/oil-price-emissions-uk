@@ -28,7 +28,7 @@ def transform_fossil(file_path, output_path="data/cleaned/fossil_fuel_cleaned.cs
     # Keeping only relevant columns
     df = df[['date', 'value']].rename(columns={'date': 'year', 'value': 'fossil_pct'})
     df['year'] = pd.to_numeric(df['year'], errors='coerce')
-    df = df[(df['year'] >= 2015) & (df['year'] <= 2024)]
+    df = df[(df['year'] >= 1990) & (df['year'] <= 2023)]
 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False)
